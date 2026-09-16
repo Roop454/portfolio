@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rupinder Kaur — Computer Science Engineer</title>
+  <meta name="description" content="Portfolio of Rupinder Kaur — Computer Science Engineering student specializing in Full-Stack Development, Data Science, and Machine Learning." />
+  <meta name="author" content="Rupinder Kaur" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Rupinder Kaur — Computer Science Engineer" />
+  <meta property="og:description" content="Full-Stack Developer • Data Science & ML Enthusiast" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👩‍💻</text></svg>" />
+</head>
+<body>
+  <!-- Progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav__brand">RK<span>.</span></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="nav__burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__glow"></div>
+      <div class="hero__inner reveal">
+        <p class="hero__eyebrow">Hello, I'm</p>
+        <h1 class="hero__name">Rupinder Kaur</h1>
+        <h2 class="hero__role">
+          <span class="typed" id="typed"></span><span class="caret">|</span>
+        </h2>
+        <p class="hero__tagline">
+          Computer Science Engineering student at <strong>Chandigarh University</strong>, building
+          full-stack web apps and data-driven solutions with a passion for AI &amp; Machine Learning.
+        </p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">View My Work</a>
+          <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+        </div>
+        <div class="hero__socials">
+          <a href="https://github.com/Roop454" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-1.8c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 4.6 18 4.9 18 4.9c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/rupinder-kaur-4a9325292" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.4h-3.5v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2 2 0 1 1 0-4.1 2 2 0 0 1 0 4.1zM7.1 20.4H3.6V9h3.5v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg>
+          </a>
+          <a href="mailto:rupinderkaur9220@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+          </a>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="section__head reveal">
+        <span class="section__num">01</span>
+        <h2 class="section__title">About Me</h2>
+      </div>
+      <div class="about">
+        <div class="about__text reveal">
+          <p>
+            I'm a <strong>Computer Science Engineering</strong> undergraduate (2023–2027) at Chandigarh
+            University with a strong foundation in software development and data analytics. I enjoy
+            turning ideas into functional, user-friendly products — from AI-driven learning platforms
+            to interactive analytics dashboards.
+          </p>
+          <p>
+            My work spans the full stack: crafting responsive React interfaces, building robust
+            Node.js &amp; Express APIs, and modeling data with Python and Machine Learning. I'm a
+            disciplined learner who thrives on problem solving, teamwork, and continuous growth.
+          </p>
+          <div class="about__badges">
+            <span>🎓 CGPA 7.83</span>
+            <span>📍 Sirhind, Punjab</span>
+            <span>💼 Open to opportunities</span>
+          </div>
+        </div>
+        <div class="about__stats reveal">
+          <div class="stat"><span class="stat__num" data-count="4">0</span><span class="stat__label">Projects Built</span></div>
+          <div class="stat"><span class="stat__num" data-count="3">0</span><span class="stat__label">Internships</span></div>
+          <div class="stat"><span class="stat__num" data-count="5">0</span><span class="stat__label">Certifications</span></div>
+          <div class="stat"><span class="stat__num" data-count="3">0</span><span class="stat__label">Languages Spoken</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section--alt" id="skills">
+      <div class="section__head reveal">
+        <span class="section__num">02</span>
+        <h2 class="section__title">Technical Skills</h2>
+      </div>
+      <div class="skills">
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">💻</div>
+          <h3>Languages</h3>
+          <div class="chips"><span>Python</span><span>C++</span><span>SQL</span></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">🌐</div>
+          <h3>Web Technologies</h3>
+          <div class="chips"><span>HTML5</span><span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">📊</div>
+          <h3>Data &amp; Analytics</h3>
+          <div class="chips"><span>Data Science</span><span>Machine Learning</span><span>Power BI</span></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">🗄️</div>
+          <h3>Databases</h3>
+          <div class="chips"><span>MySQL</span><span>MongoDB</span><span>Oracle</span></div>
+        </div>
+      </div>
+      <div class="soft-skills reveal">
+        <h3>Interpersonal Strengths</h3>
+        <div class="chips chips--soft">
+          <span>Leadership</span><span>Problem Solving</span><span>Teamwork</span><span>Creativity</span>
+          <span>Time Management</span><span>Clear Communication</span><span>Critical Thinking</span>
+          <span>Adaptability</span><span>Conflict Resolution</span><span>Networking</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="section__head reveal">
+        <span class="section__num">03</span>
+        <h2 class="section__title">Featured Projects</h2>
+      </div>
+      <div class="projects">
+        <article class="project reveal">
+          <div class="project__top">
+            <div class="project__folder">📁</div>
+            <a href="https://github.com/Roop454" target="_blank" rel="noopener" class="project__link" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-1.8c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 4.6 18 4.9 18 4.9c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+            </a>
+          </div>
+          <h3 class="project__title">Adaptive Learning Platform</h3>
+          <p class="project__desc">
+            An AI-driven adaptive learning platform that personalizes learning paths. Features user
+            profiling and progress tracking to recommend content based on skill level and behavior,
+            with a responsive, interactive UI.
+          </p>
+          <div class="chips chips--tech"><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>REST APIs</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__top">
+            <div class="project__folder">📁</div>
+            <a href="https://github.com/Roop454" target="_blank" rel="noopener" class="project__link" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-1.8c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 4.6 18 4.9 18 4.9c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+            </a>
+          </div>
+          <h3 class="project__title">Vaccination Data Analysis &amp; Visualization</h3>
+          <p class="project__desc">
+            A data-driven web application to manage and serve vaccination datasets via RESTful APIs,
+            featuring an interactive dashboard designed for clear trend analysis and insights.
+          </p>
+          <div class="chips chips--tech"><span>React</span><span>Node.js</span><span>Express</span><span>Data Viz</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__top">
+            <div class="project__folder">📁</div>
+            <a href="https://github.com/Roop454" target="_blank" rel="noopener" class="project__link" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-1.8c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 4.6 18 4.9 18 4.9c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+            </a>
+          </div>
+          <h3 class="project__title">Integrated Retail Analytics</h3>
+          <p class="project__desc">
+            A retail analytics system for store optimization with an interactive dashboard. Backend
+            services surface sales insights and metrics, and a responsive interface monitors KPIs and
+            business trends.
+          </p>
+          <div class="chips chips--tech"><span>Analytics</span><span>Dashboard</span><span>Backend</span><span>KPIs</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__top">
+            <div class="project__folder">📁</div>
+            <a href="https://github.com/Roop454" target="_blank" rel="noopener" class="project__link" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-1.8c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 4.6 18 4.9 18 4.9c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+            </a>
+          </div>
+          <h3 class="project__title">Amazon Delivery Time Prediction</h3>
+          <p class="project__desc">
+            A machine-learning system that predicts delivery times from logistics data. Predictions are
+            served through backend APIs in real time, with a user-friendly interface for input handling
+            and result visualization.
+          </p>
+          <div class="chips chips--tech"><span>Machine Learning</span><span>Python</span><span>REST APIs</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section section--alt" id="experience">
+      <div class="section__head reveal">
+        <span class="section__num">04</span>
+        <h2 class="section__title">Experience &amp; Leadership</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__date">Dec 2025 – Feb 2026</span>
+            <h3>Campus Ambassador</h3>
+            <p class="timeline__org">IIT Delhi</p>
+            <p>Represented and promoted IIT Delhi initiatives across campus, driving student engagement and outreach.</p>
+          </div>
+        </div>
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__date">Oct 2025 – Feb 2026</span>
+            <h3>Google Student Ambassador</h3>
+            <p class="timeline__org">Google</p>
+            <p>Championed Google technologies and developer programs, building community and technical awareness.</p>
+          </div>
+        </div>
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__date">Aug 2025 – Oct 2025</span>
+            <h3>Intern</h3>
+            <p class="timeline__org">Labmentix</p>
+            <p>Hands-on experience contributing to real-world software and data projects.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section__head reveal" style="margin-top:4rem">
+        <h3 class="section__title section__title--sm">🏆 Achievements</h3>
+      </div>
+      <ul class="achievements">
+        <li class="reveal">Honored with the <strong>Milestone Achievement Award (2026)</strong> for dedication and impactful contributions.</li>
+        <li class="reveal">Secured <strong>4th position</strong> in the AIML Class Excellence Championship (2024–25).</li>
+        <li class="reveal">Awarded the <strong>Academic Achiever Award</strong> for consistent academic excellence.</li>
+        <li class="reveal">Secured <strong>2nd position</strong> during Anti-Ragging Awareness Week for creative, awareness-driven contributions.</li>
+        <li class="reveal">Active contributor to innovative solutions through <strong>hackathons</strong> and technical challenges.</li>
+      </ul>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education">
+      <div class="section__head reveal">
+        <span class="section__num">05</span>
+        <h2 class="section__title">Education</h2>
+      </div>
+      <div class="edu">
+        <div class="edu__item reveal">
+          <div class="edu__year">2023 – 2027</div>
+          <div class="edu__body">
+            <h3>B.E. Computer Science Engineering</h3>
+            <p class="edu__school">Chandigarh University, Gharuan</p>
+            <span class="edu__score">CGPA: 7.83</span>
+          </div>
+        </div>
+        <div class="edu__item reveal">
+          <div class="edu__year">2022 – 2023</div>
+          <div class="edu__body">
+            <h3>Intermediate (CBSE)</h3>
+            <p class="edu__school">Divine Light International School, Shamsher Nagar, Sirhind</p>
+            <span class="edu__score">72.4%</span>
+          </div>
+        </div>
+        <div class="edu__item reveal">
+          <div class="edu__year">2020 – 2021</div>
+          <div class="edu__body">
+            <h3>Matriculation (CBSE)</h3>
+            <p class="edu__school">Gobindgarh Public School, Mandi Gobindgarh</p>
+            <span class="edu__score">91.3%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section__head reveal" style="margin-top:4rem">
+        <h3 class="section__title section__title--sm">📜 Certifications</h3>
+      </div>
+      <div class="certs">
+        <div class="cert reveal">Microsoft Certified: Azure AI Fundamentals</div>
+        <div class="cert reveal">Oracle Cloud Infrastructure — AI Foundations Associate</div>
+        <div class="cert reveal">Oracle — Database Programming with PL/SQL</div>
+        <div class="cert reveal">Python (Beginner to Expert)</div>
+        <div class="cert reveal">Data Science</div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--alt" id="contact">
+      <div class="contact reveal">
+        <span class="section__num">06</span>
+        <h2 class="section__title">Let's Connect</h2>
+        <p class="contact__lead">
+          I'm always open to discussing new projects, opportunities, or collaborations.
+          Feel free to reach out — my inbox is always open!
+        </p>
+        <a href="mailto:rupinderkaur9220@gmail.com" class="btn btn--primary btn--lg">Say Hello 👋</a>
+        <div class="contact__links">
+          <a href="https://github.com/Roop454" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/rupinder-kaur-4a9325292" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:rupinderkaur9220@gmail.com">Email</a>
+          <a href="tel:+918146177454">Phone</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Designed &amp; built by <strong>Rupinder Kaur</strong></p>
+    <p class="footer__sub">© <span id="year"></span> · Made with ☕ and code</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
