@@ -49,8 +49,9 @@
   if (!el) return;
   const roles = [
     'Full-Stack Developer',
-    'Data Science Enthusiast',
+    'Cloud & AI Certified',
     'Machine Learning Explorer',
+    'Data Science Enthusiast',
     'Problem Solver'
   ];
   let r = 0, c = 0, deleting = false;
@@ -95,12 +96,13 @@
       if (!entry.isIntersecting) return;
       const el = entry.target;
       const target = parseInt(el.dataset.count, 10);
+      const suffix = el.dataset.suffix || '';
       let cur = 0;
       const step = Math.max(1, Math.ceil(target / 30));
       const timer = setInterval(function () {
         cur += step;
         if (cur >= target) { cur = target; clearInterval(timer); }
-        el.textContent = cur;
+        el.textContent = cur + suffix;
       }, 40);
       io.unobserve(el);
     });
